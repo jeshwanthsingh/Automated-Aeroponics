@@ -10,7 +10,7 @@ GPIO.setmode(GPIO.BCM)
 
 def ts():
     print("Reading DHT")
-    humidity, temperature = Adafruit_DHT.read_retry(sensor, 4)
+    humidity, temperature = Adafruit_DHT.read_retry(sensor, 27)
     return humidity, temperature
 
 while (1):
